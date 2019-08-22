@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'aclassview.apps.AclassviewConfig',
 ]
 
+#中间件
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -48,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'middleware.simple_middleware'
 ]
 
 ROOT_URLCONF = 'demo.urls'
