@@ -74,6 +74,23 @@ TEMPLATES = [
         },
     },
 ]
+#jinja2的模板设置
+# TEMPLATES = [
+#     {
+#         'BACKEND': 'django.template.backends.jinja2.Jinja2',#修改1
+#         'DIRS': [os.path.join(BASE_DIR, 'templates')],
+#         'APP_DIRS':True,
+#         'OPTIONS':{
+#             'environment': 'jinja2_env.environment',# 修改2
+#             'context_processors':[
+#                 'django.template.context_processors.debug',
+#                 'django.template.context_processors.request',
+#                 'django.contrib.auth.context_processors.auth',
+#                 'django.contrib.messages.context_processors.messages',
+#             ],
+#         },
+#     },
+# ]
 
 WSGI_APPLICATION = 'demo.wsgi.application'
 
