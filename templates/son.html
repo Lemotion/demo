@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>son</title>
+</head>
+<body>
+<!--继承父模板-->
+{% extends 'father.html' %}
+{% block navbar %}
+    {{ block.super }}
+    <h5>子模板的内容</h5>
+{% endblock navbar %}
+</body>
+</html>

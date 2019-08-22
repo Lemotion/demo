@@ -22,4 +22,4 @@ def index(request):
     }
 
     #渲染模板
-    return render(request,'index.html',context=content)
+    return render(request,'son.html',context=content)
