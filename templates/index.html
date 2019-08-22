@@ -5,6 +5,23 @@
     <title>Django自带的模板</title>
 </head>
 <body>
+    <!--条件语句 if else-->
+    {% if age > 18 %}
+        <h3>成年人</h3>
+    {% else %}
+        <h4>未成年</h4>
+    {% endif %}
+    <!--循环模板-->
+    {% for item in sons %}
+        <h2>{{ forloop.counter }}-------{{ item }}</h2>
+        {% empty %}
+        <h3>不好意思,暂时没有数据</h3>
+    {% endfor %}
+    <!--变量模板-->
     <h1>hello world</h1>
+    <h1>姓名：{{ name }}</h1>
+    <h1>年龄：{{ age }}</h1>
+    <h1>儿子们：{{ son }}</h1>
+    <h1>媳妇：{{ wife.name }}</h1>
 </body>
 </html>
