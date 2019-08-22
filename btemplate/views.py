@@ -1,3 +1,5 @@
+from datetime import date
+
 from django.http import HttpResponse
 from django.shortcuts import render
 
@@ -14,7 +16,9 @@ def index(request):
         ],
         "wife":{
             "name":"小丽"
-        }
+        },
+        "date_time":date(2008,1,1),
+        "data":"<a>百度链接</a>"
     }
 
     #渲染模板

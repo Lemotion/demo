@@ -1,3 +1,5 @@
+
+{% load multi_filter %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +7,15 @@
     <title>Django自带的模板</title>
 </head>
 <body>
+    <h1>自定义的过滤器{{ age|multi }}记得重启服务器</h1>
+
+    <!--字符实体-->
+    {{ data |safe }}
+    <!--过滤器 自带的系统给的-->
+    {{ ages|default:'年龄不详' }}
+    {{ son|length }}
+    {{ date_time|date:'Y-m-d' }}
+    {{ safe }}
     <!--条件语句 if else-->
     {% if age > 18 %}
         <h3>成年人</h3>
