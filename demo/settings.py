@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'aclassview.apps.AclassviewConfig',
+    'btemplate.apps.BtemplateConfig'
 ]
 
 #中间件
@@ -56,7 +57,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'demo.urls'
-
+#Django自带的 模板配置
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
