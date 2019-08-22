@@ -49,7 +49,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'middleware.simple_middleware'
+    #在请求视图被处理前，中间件由上至下依次执行
+    #在请求视图被处理后，中间件由下至上依次执行
+    'middleware.simple_middleware',
+    'middleware.simple_middleware_two'
 ]
 
 ROOT_URLCONF = 'demo.urls'
